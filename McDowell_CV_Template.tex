@@ -27,9 +27,9 @@
 \usepackage{amsmath}
 
 % Set applicant's personal data for header
-\name{Gayle L. McDowell}
-\address{123 Spruce St, Apt 35 \linebreak Philadelphia PA 19103}
-\contacts{(555) 555-1212 \linebreak gayle@careercup.com}
+\name{Matthew Atkin}
+\address{3 Hopetoun Green, \linebreak Caroline Springs, VIC }
+\contacts{0428 848 873 \linebreak matthewjamesatkin@gmail.com \linebreak www.github.com/mjatkin}
 
 \begin{document}
 
@@ -37,81 +37,78 @@
 	\makeheader
 	
 	% Print the content
-	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
-			iChat AV			
-			\begin{itemize}
-				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
-				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
-				\item Redesigned chat file format and implemented backwards compatibility for search.
-			\end{itemize}
-		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}	
-			\begin{itemize}
-				\item Promoted to Lead Student Ambassador in Fall 2004; supervised 10 -- 15 Student Ambassadors.
-				\item Created and taught Computer Science course, CSE 099: Software Design and Development.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Head Teaching Assistant}{University of Pennsylvania}{Fall 2001 -- Spring 2005}		
-			\begin{itemize}
-				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
-				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Design Engineer, Intern}{Microsoft Corporation}{Summers 2001 -- 2003}
-			Visual Studio Core (Summer 2003)		
-			\begin{itemize}
-				\item Implemented a user interface for the VS open file switcher (ctrl-tab) and extended it to tool windows.
-				\item Created service to provide gradient across VS and VS add-ins. Optimized service via caching.
-			\end{itemize}
-			Programmer Productivity Research Center (Summers 2001, 2002)
-			\begin{itemize}
-				\item Built app to compute similarity of all methods in a code base; reduced time from $O(n^2)$ to $O(n\ log\ n)$. 
-				\item Created test case generation tool which creates random XML docs from XML Schema.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
 	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Philadelphia, PA}{University of Pennsylvania}{Fall 2000 -- May 2005}
+		\begin{cvsubsection}{Melbourne, VIC}{RMIT University}{Mar 2016 -- Present}
 			\begin{itemize}
-				\item M.S.E. in Computer and Information Science, May 2005. GPA: 3.6
-				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.
-				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
-				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
+				\item \textbf{Double Major}: Bachelor of Engineering (Computer and Network Engineering) (Honours)/Bachelor of Computer Science (GPA: 3.3) (Expected Dec 2020) 
+				\item \textbf{Computer Science Coursework}: Operating Systems, Algorithms \& Data Structures, Network Programming, Artificial Intelligence, Web Programming, Database Concepts, Software Engineering, Graphics Programming
+				\item \textbf{Electrical Eng. Coursework}: Circuit Design, Signal Processing, Embedded System Programming, Network Engineering, Digital System Design, Computer Architecture, RTOS Programming
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
-	\begin{cvsection}{Technical Experience}
-		\begin{cvsubsection}{Projects}{}{}
+
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{UNIX Clone For ARMv7-A}{}{}
 			\begin{itemize}
-				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
-				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
-				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
+				\item Developed a UNIX-like kernel targeting the ARM Cortex-A15 core in QEMU.
+				\item Incorporated exception handling, virtual memory, multitasking, UART driver and keyboard handling.
+				\item Diagnosed and debugged problems within the kernel using GDB.
+				\item Extensively made use of Git and Github to more easily manage development between multiple developers.
+				\item \underline{Utilised}: C++ Programming, ARM Assembly Programming, QEMU, GDB, Git
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Real Time Traffic Controller}{}{}
+			\begin{itemize}
+				\item Designed a real time traffic control system for two four-way intersections separated by a train crossing.
+				\item Created a custom PCB with NeoPixel LEDs to represent the intersections and train crossing.
+				\item Utilised multiple DE-10 Nano nodes and networked IPC to control each intersection/crossing separately.
+				\item Implemented fail safe procedures in the system, e.g. if the train controller node goes offline, the adjacent intersection will not route traffic towards the train crossing.
+				\item \underline{Utilised}: C++ Programming, Circuit Design, DE-10 Nano, QNX RTOS Programming, Git
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Soundcard Device Controller}{}{}
+			\begin{itemize}
+				\item Designed an ISA device controller for the Sound Blaster 16 sound card for the DE-10 Nano FPGA.
+				\item Created a completely custom riser card to interface the ISA bus connector to the DE-10 Nano GPIO pins.
+				\item Diagnosed problems with the riser card and ISA device controller using an oscilloscope.
+				\item Configured memory mapped IO between the FPGA and hard processor system and created a device driver.
+				\item \underline{Utilised}: C Programming, Verilog Programming, Intel Quartus Prime, Oscilloscope, DE-10 Nano
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Arduino LED Matrix}{}{}
+			\begin{itemize}
+				\item Designed and implemented a custom 8x8 LED matrix board with device driver for an Arduino Microcontroller.
+				\item \underline{Utilised}: C Programming, Arduino Microcontroller, Circuit Design
+			\end{itemize}
+		\end{cvsubsection}
+
+	\end{cvsection}
+
+	\begin{cvsection}{Extra-Curricular}
+		\begin{cvsubsection}{RMIT ECE Club}{Committee Member}{2019 -- Present}
+			\begin{itemize}
+				\item Elected as 2019 secretary and 2020 vice president of the Electrical \& Computer Engineering Club.
+				\item Managed club social media and email, as well as consistently engaged in club decision making \& logistics.
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{RMIT Peer Mentoring}{Student Mentor}{2018 -- Present}
+			\begin{itemize}
+				\item Completed three semesters of student mentoring for programming and computing theory based subjects.
+				\item Provided academic coaching as well as advice on class scheduling, time management, and study skills.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
-	\begin{cvsection}{Additional Experience and Awards}
-		\begin{cvsubsection}{}{}{}	
+
+	\begin{cvsection}{Skills}
+		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
-				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
+				\item \textbf{Software:} (\emph{proficient}): C, C++, Unix, Git, Verilog (\emph{familiar}): Java, Python, MATLAB, JavaScript, OpenGL
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
-	\begin{cvsection}{Languages and Technologies}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
-				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
 \end{document}
