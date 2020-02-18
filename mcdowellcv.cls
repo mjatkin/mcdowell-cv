@@ -123,7 +123,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 \address{}
 
 \newcommand\printaddress{
-	\small{\@address}
+	\footnotesize{\@address}
 }
 
 \makeatother
@@ -150,7 +150,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 \contacts{}
 
 \newcommand\printcontacts{
-	\small{\@contacts}
+	\footnotesize{\@contacts}
 }
 
 \makeatother
