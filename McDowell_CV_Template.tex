@@ -37,13 +37,32 @@
 	\makeheader
 	
 	% Print the content
-		
+	\begin{cvsection}{Career Objective}
+		\begin{cvsubsection}{}{}{}
+			I am an enthusiastic Computer science and computer engineering double major seeking a software engineering graduate role at Google.
+			I have excellent leadership and teamwork skills, from my 5 years of experience in hospitality and 4 years of university group work.
+			I am proficient in programming and data structures, specifically C/C++, from several university and hobby projects.
+		\end{cvsubsection}
+	\end{cvsection}
+
 	\begin{cvsection}{Education}
 		\begin{cvsubsection}{Melbourne, VIC}{RMIT University}{Mar 2016 -- Present}
 			\begin{itemize}
 				\item \textbf{Double Major}: Bachelor of Engineering (Computer and Network Engineering) (Honours)/Bachelor of Computer Science (GPA: 3.3) (Expected Dec 2020) 
 				\item \textbf{Computer Science Coursework}: Operating Systems, Algorithms \& Data Structures, Network Programming, Artificial Intelligence, Web Programming, Database Concepts, Software Engineering, Graphics Programming
+				% Operating Systems, Algorithms \& Data Structures, Network Programming, Artificial Intelligence, Web Programming, Database Concepts, Software Engineering, Graphics Programming
 				\item \textbf{Electrical Eng. Coursework}: Circuit Design, Signal Processing, Embedded System Programming, Network Engineering, Digital System Design, Computer Architecture, RTOS Programming
+				% Circuit Design, Signal Processing, Embedded System Programming, Network Engineering, Digital System Design, Computer Architecture, RTOS Programming
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Melbourne, VIC}{KFC -- Front of House}{Dec 2013 -- Jan 2019}
+			\begin{itemize}
+				\item Worked in a fast paced environment 
+				\item Trained new team members 
+				\item Worked in a team 
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -68,7 +87,15 @@
 				\item \underline{Utilised}: C++ Programming, Circuit Design, DE-10 Nano, QNX RTOS Programming, Git
 			\end{itemize}
 		\end{cvsubsection}
-
+\iffalse
+-Worked in a team of four to develop a real time traffic controller system for two four-way intersections separated by a train crossing.
+-The intersections were represented by a custom PCB our team designed and created, utilising NeoPixel LEDs as our traffic lights and push buttons as our pedestrian buttons. 
+-The system itself was controlled by four separate micro-controller nodes (DE-10 Nano) running the QNX real time operating system, one for each intersection, one for the train crossing and one more as the controlling/watchdog system. 
+-Each node was heavily multi threaded and networked IPC was utilised to communicate between nodes. 
+-Node failure was accounted for in the design, with fail safe mechanisms employed to stop potentially dangerous scenarios, e.g. if the train crossing controller node went offline, the adjacent intersections would not route traffic towards the crossing.
+-The lights realistically change, transitioning from green to yellow to red in real time, with the transitions being triggered by either timers, or the pedestrian buttons depending on the mode.
+-The controller node featured a command line interface, which allowed individual control over each other nodes mode, light configuration and timing. 
+\fi
 		\begin{cvsubsection}{Soundcard Device Controller}{}{}
 			\begin{itemize}
 				\item Designed an ISA device controller for the Sound Blaster 16 sound card for the DE-10 Nano FPGA.
@@ -78,25 +105,33 @@
 				\item \underline{Utilised}: C Programming, Verilog Programming, Intel Quartus Prime, Oscilloscope, DE-10 Nano
 			\end{itemize}
 		\end{cvsubsection}
+\iffalse
+-In a pair, designed and developed an ISA device controller for the Sound Blaster 16 sound card for the DE-10 Nano SoC.
+-A custom riser card was created to interface the ISA bus connector on the sound card to the DE-10 Nano GPIO pins.
+-The controller itself was written in Verilog and deployed on the DE-10 Nano FPGA, this consisted of write, read and configuration registers, as well as logic to match the specific timing requirements of the ISA standard.
+-Intel Quartus Prime was utilised to memory map the controller registers to the hard processor system, allowing us to write and read from the card transparently through a basic custom driver.
+\fi
 
+\iffalse
 		\begin{cvsubsection}{Arduino LED Matrix}{}{}
 			\begin{itemize}
 				\item Designed and implemented a custom 8x8 LED matrix board with device driver for an Arduino Microcontroller.
 				\item \underline{Utilised}: C Programming, Arduino Microcontroller, Circuit Design
 			\end{itemize}
 		\end{cvsubsection}
+\fi
 
 	\end{cvsection}
 
 	\begin{cvsection}{Extra-Curricular}
-		\begin{cvsubsection}{RMIT ECE Club}{Committee Member}{2019 -- Present}
+		\begin{cvsubsection}{RMIT ECE Club}{Committee Member}{Mar 2019 -- Present}
 			\begin{itemize}
 				\item Elected as 2019 secretary and 2020 vice president of the Electrical \& Computer Engineering Club.
 				\item Managed club social media and email, as well as consistently engaged in club decision making \& logistics.
 			\end{itemize}
 		\end{cvsubsection}
 
-		\begin{cvsubsection}{RMIT Peer Mentoring}{Student Mentor}{2018 -- Present}
+		\begin{cvsubsection}{RMIT Peer Mentoring}{Student Mentor}{Mar 2018 -- Present}
 			\begin{itemize}
 				\item Completed three semesters of student mentoring for programming and computing theory based subjects.
 				\item Provided academic coaching as well as advice on class scheduling, time management, and study skills.
@@ -108,6 +143,7 @@
 		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
 				\item \textbf{Software:} (\emph{proficient}): C, C++, Unix, Git, Verilog (\emph{familiar}): Java, Python, MATLAB, JavaScript, OpenGL
+				\item \textbf{Transferable:} Leadership, Teamwork, Detail Oriented, 
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
