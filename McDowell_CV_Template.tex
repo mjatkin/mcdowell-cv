@@ -37,6 +37,7 @@
 	\makeheader
 	
 	% Print the content
+\iffalse
 	\begin{cvsection}{Career Objective}
 		\begin{cvsubsection}{}{}{}
 			I am an enthusiastic final year computer science \& computer engineering double major seeking a software engineering graduate role at Google.
@@ -44,7 +45,7 @@
 			I am experienced in programming, especially in C/C++, and fluent in common algorithms and data structures, from several university and hobby projects.
 		\end{cvsubsection}
 	\end{cvsection}
-
+\fi
 	\begin{cvsection}{Education}
 		\begin{cvsubsection}{Melbourne, VIC}{RMIT University}{Mar 2016 -- Present}
 			\begin{itemize}
@@ -74,16 +75,16 @@
 				\item Created a custom PCB with NeoPixel LEDs to represent the intersections and train crossing.
 				\item Utilised multiple DE-10 Nano nodes and networked IPC to control each intersection/crossing separately.
 				\item Implemented fail safe procedures in the system, e.g. if the train controller node goes offline, the adjacent intersection will not route traffic towards the train crossing.
-				\item \underline{Utilised}: C++ Programming, Circuit Design, DE-10 Nano, QNX RTOS Programming, Git
+				\item \underline{Utilised}: C++ Programming, Circuit Design, DE-10 Nano, QNX RTOS Programming, Multi-threading, Git
 			\end{itemize}
 		\end{cvsubsection}
 
 		\begin{cvsubsection}{Online Multiplayer Guess Game}{RMIT University}{Mar 2019 -- Jun 2019}
 			\begin{itemize}
 				\item Designed an online multiplayer game where players have to guess a number between 0 and 9.
-				\item Utilised a client-server model in which all players send their guesses to a single server, which processes these guesses and returns the results.
-				\item Implemented 'keep alive' messages to ensure disconnected players do not hold up the game.
-				\item Utilised multi-threading on both the client and server programs to ensure that 
+				\item Utilised a client-server model in which all players send their guesses to a single server, which processes these guesses and returns the results as a leaderboard.
+				\item Implemented 'keep alive' messages to ensure disconnected players do not hold up the current game.
+				\item Utilised multi-threading on both the client and server programs.
 				\item \underline{Utilised}: Java Programming, TCP/IP programming, Multi-threading, Git
 			\end{itemize}
 		\end{cvsubsection}
@@ -128,21 +129,10 @@
 	\end{cvsection}
 
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Melbourne, VIC}{KFC -- Front of House}{Dec 2013 -- Jan 2019}
-			\begin{itemize}
-				\item Delivered consistent and quality service as a cohereant team while in high pressure and stressful times.
-				\item Trained and mentored new team members to become confident and team orientated in their service.
-				\item Achieved employee of the month on several occasions due to a consistent and reliable work ethic.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-
-	\begin{cvsection}{Other Employment}
 		\begin{cvsubsection}{RMIT ECE Club}{Committee Member}{Mar 2019 -- Present}
 			\begin{itemize}
 				\item Elected as 2019 secretary and 2020 vice president of the Electrical \& Computer Engineering Club.
 				\item Managed club social media and email, as well as consistently engaged in club decision making \& logistics.
-				\item Something about leadership
 			\end{itemize}
 		\end{cvsubsection}
 
@@ -150,11 +140,26 @@
 			\begin{itemize}
 				\item Completed three semesters of student mentoring for programming and computing theory based subjects.
 				\item Provided academic coaching as well as advice on class scheduling, time management, and study skills.
-				\item Something about adaptability
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Melbourne, VIC}{KFC -- Front of House}{Dec 2013 -- Jan 2019}
+			\begin{itemize}
+				\item Delivered consistent and quality service as a coherent team while in high pressure and stressful times.
+				\item Trained and mentored new team members to become confident and team orientated in their service.
+				\item Achieved employee of the month on several occasions due to a consistent and reliable work ethic.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 
+	\begin{cvsection}{Skills}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \textbf{Software:} (\emph{proficient}): C, C++, Unix, Git, Verilog (\emph{familiar}): Java, Python, MATLAB, JavaScript, OpenGL
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+\iffalse
 	\begin{cvsection}{Skills}
 		\begin{cvsubsection}{Technical}{}{}
 			\begin{itemize}
@@ -186,5 +191,5 @@
 			References Available Upon Request.
 		\end{cvsubsection}
 	\end{cvsection}
-
+\fi
 \end{document}
